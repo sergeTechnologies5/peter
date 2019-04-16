@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.peter">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
@@ -11,14 +14,16 @@
     <activity
            android:name="peter.activities.Login_Activity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+           android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="peter.MainActivity"></activity>
+        <activity android:name="peter.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
         <activity android:name="peter.activities.SendDevMail"></activity>
         <activity android:name="peter.activities.UploadFiles" />
         <activity android:name="peter.activities.Apply" />
