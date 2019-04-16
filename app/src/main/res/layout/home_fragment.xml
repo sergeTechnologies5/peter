@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+
+        tools:ignore="MissingConstraints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/linear">
+
+           <TextView
+               android:id="@+id/username"
+               android:text=""
+               android:textSize="50px"
+               android:padding="5px"
+               android:paddingBottom="30px"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               tools:ignore="MissingConstraints" />
+
+           <TextView
+               android:padding="5px"
+               android:textSize="50px"
+               android:id="@+id/title"
+               android:text="Welcome to Jobs Alert"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               tools:ignore="MissingConstraints" />
+       </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10px"
+            android:layout_below="@+id/linear"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/note_item">
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+
+</FrameLayout>

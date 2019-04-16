@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Apply"
+    android:orientation="horizontal"
+    android:padding="2px">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Title"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Description"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/vacancy_type"
+        android:text="Vacancy Type"
+        android:minHeight="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/description"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/vacancy_type"
+        android:text="Date"
+        android:layout_width="match_parent"
+        android:id="@+id/date"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="100sp"
+        android:layout_marginRight="100px"
+        android:layout_marginBottom="100sp"
+        android:padding="10px"
+        android:paddingTop="100px"
+        android:text="Apply" />
+
+
+</RelativeLayout>

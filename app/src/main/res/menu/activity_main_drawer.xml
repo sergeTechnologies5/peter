@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Home" />
+        <item
+            android:id="@+id/jobs"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/jobs_title" />
+        <item
+            android:id="@+id/internships"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/internships_title" />
+        <item
+            android:id="@+id/attachments"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/attachments_title" />
+        <item
+            android:id="@+id/conferences"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/conferences_title" />
+        <item
+            android:id="@+id/scholarships"
+            android:title="@string/scholarship_title"
+            android:icon="@drawable/ic_menu_slideshow">
+
+        </item>
+    </group>
+
+    <item android:title="@string/communicate_title">
+        <menu>
+            <item
+                android:id="@+id/CV"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send VC" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/send_title" />
+            <item
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/email_dev_title"
+                android:id="@+id/email_dev">
+
+            </item>
+        </menu>
+    </item>
+
+</menu>
